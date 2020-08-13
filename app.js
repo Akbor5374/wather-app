@@ -80,9 +80,8 @@ let months = ["January","February","March","April","May","June","July","August",
 let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",];
 
 const dateTime = new Date();
-let cHours = dateTime.getHours() > 12 ? dateTime.getHours() - 12 : dateTime.getHours();
-const hours = cHours == 0 ? cHours = 1 : cHours;
-const am_pm = dateTime.getHours() >= 12 ? "pm" : "am";
+let hours = dateTime.getHours() > 12 ? dateTime.getHours() - 12 : dateTime.getHours();
+const am_pm = dateTime.getHours() >= 12 ? "PM" : "AM";
 const minute = dateTime.getMinutes();
 const day = days[dateTime.getDay()];
 const date = dateTime.getDate();
