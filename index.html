@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather-app</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    <body>
+        <section id="body">
+             <div class="container">
+                  <div class="background">
+                      <div class="alert alert-danger text-center">
+                        <strong>Alert!</strong> Browser doesn't support Geolocation.
+                      </div>
+                      <div class="search-area">
+                        <input type="text" class="search" placeholder="Enter city or country">
+                        <button type="button" class="btn btn-primary">Search</button>
+                      </div>
+                      <h2 class="city info mt-5">City</h2>
+                      <p class="time text-center text-light">Time</p>
+                      <h2 class="info"><span id="temperature">0</span>&deg; C</h2>
+                      <div class="more-info">
+                          <h4 class="mt-5">More Weather Info</h4>
+                          <span class="mr-3 icon"><img src="icons/unknown.png"></span>
+                          <p class="description">Weather Description</p>
+                          <table class="table table-bordered">
+                            <tbody>
+                              <tr>
+                                <td>Temp-Min: <span class="font tempMin">00</span>&deg; C</td>
+                                <td>Temp-Max: <span class="font tempMax">00</span>&deg; C</td>
+                              </tr>
+                              <tr>
+                                <td>Wind: <span class="font wind">0.0m/s, 00</span>&deg;</td>
+                                <td>Pressure: <span class="font pressure">000</span>hpa</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" >Humidity: <span class="font humidity">00</span> %</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                  </div>
+             </div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
