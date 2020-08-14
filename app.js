@@ -81,7 +81,8 @@ let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturda
 
 const dateTime = new Date();
 let hours = dateTime.getHours() > 12 ? dateTime.getHours() - 12 : dateTime.getHours();
-const am_pm = dateTime.getHours() >= 12 ? "PM" : "AM";
+    hours = hours == 0 ? hours = 12 : hours;
+const am_pm = dateTime.getHours() >= 12 ? "pm" : "am";
 const minute = dateTime.getMinutes();
 const day = days[dateTime.getDay()];
 const date = dateTime.getDate();
